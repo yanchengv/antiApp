@@ -1,4 +1,49 @@
-.home-top-bar{
-  height: 30%;
-  background: #C40018;
+.bar-yanzheng-icon{
+  clear: both;
+  display: block;
+  margin-left:90%;
+  width:30px;
+  height:30px;
 }
+.home-top-bar{
+  height: 44px;
+  background-color:#C50119;
+  border-bottom: none;
+}
+.home-logo{
+  height: 200px;
+  margin-top: 0;
+  background-image:url('../img/background.jpg');
+  background-repeat: repeat;
+}
+.logo-center{
+  clear: both;
+  display: block;
+  margin:auto;
+  height: 130px;
+  width: 130px;
+  margin-top: 44px;
+}
+.icon-position-cus{
+  background-image:url('../img/position.png');
+  background-repeat:no-repeat;
+  height:50px;
+  width:50px;
+  margin-top:10px;
+}
+.home-logo-word p{
+  text-align:center;
+  color:#ffffff;
+}
+.big-word{
+ line-height: 30px;
+ font-size:20px;
+ font-family: Microsoft YaHei;
+ font-weight: bold
+}
+.small-word{
+  font-size:14px;
+  font-family:FZShuTi;
+}
+
+

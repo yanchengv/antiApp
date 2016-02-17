@@ -1,3 +1,21 @@
-.bar-color{
-  background: #C40018;
+.tab-item .icon{
+  margin-left: 30px;
 }
+.home-icon{
+  background-image:url('../img/menu-icon/home.png');
+  background-repeat: no-repeat;
+
+}
+.code-icon{
+  background-image:url('../img/menu-icon/code.png');
+  background-repeat:no-repeat;
+}
+.jubao-icon{
+  background-image:url('../img/menu-icon/jubao.png');
+  background-repeat:no-repeat;
+}
+.my-info{
+  background-image:url('../img/menu-icon/my.png');
+  background-repeat:no-repeat;
+}
+
