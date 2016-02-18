@@ -23,28 +23,62 @@ angular.module('antiApp', ['ionic'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
+
+  //配置$ionicConfigProvider使tabs导航在底部
+  $ionicConfigProvider.platform.android.tabs.style('standard');
+  $ionicConfigProvider.platform.android.tabs.position('bottom');
+  $ionicConfigProvider.platform.ios.tabs.style('standard');
+  $ionicConfigProvider.platform.ios.tabs.position('bottom');
+
+  // if none of the under states are matched, use this as the fallback
+  $urlRouterProvider.otherwise('/tab/home');
+  //else
   $stateProvider
-    .state('home',{
+    .state('tab',{
+      url:'/tab',
+      templateUrl: 'templates/tabs.html'
+    })
+    .state('tab.home',{
       url:'/home',
-      templateUrl: 'templates/home.html'
+      views:{
+        'tab-home':{
+          templateUrl: 'templates/home.html'
+        }
+
+      }
+
 
     })
-    .state('verification',{
+    .state('tab.verification',{
       url:'/verification',
-      templateUrl:'templates/verification.html'
+      views:{
+        'tab-verification':{
+          templateUrl:'templates/verification.html'
+        }
+      }
+
     })
-    .state('report',{
+    .state('tab.report',{
       url:'/report',
-      templateUrl:'templates/report.html'
+      views:{
+        'tab-report':{
+          templateUrl:'templates/report.html'
+        }
+      }
+
     })
-    .state('my',{
+    .state('tab.my',{
       url:'/my',
-      templateUrl:'templates/my.html'
+      views:{
+        'tab-my':{
+          templateUrl:'templates/my.html'
+        }
+      }
+
     })
 
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/home');
+
   })
 
 

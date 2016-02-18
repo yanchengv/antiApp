@@ -1,0 +1,40 @@
+.tab-item .icon{
+  margin-left: 30px;
+}
+.home-icon-off{
+  background-image:url('../img/menu-icon/home.png');
+  background-repeat: no-repeat;
+
+
+}
+.home-icon-on{
+  background-image:url('../img/menu-icon/home-s.png');
+  background-repeat: no-repeat;
+
+}
+.code-icon-off{
+  background-image:url('../img/menu-icon/code.png');
+  background-repeat:no-repeat;
+}
+
+.code-icon-on{
+  background-image:url('../img/menu-icon/code-s.png');
+  background-repeat:no-repeat;
+}
+
+.jubao-icon-off{
+  background-image:url('../img/menu-icon/jubao.png');
+  background-repeat:no-repeat;
+}
+.jubao-icon-on{
+  background-image:url('../img/menu-icon/jubao-s.png');
+  background-repeat:no-repeat;
+}
+.my-info-off{
+  background-image:url('../img/menu-icon/my.png');
+  background-repeat:no-repeat;
+}
+.my-info-on{
+  background-image:url('../img/menu-icon/my-select.png');
+  background-repeat:no-repeat;
+}

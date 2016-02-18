@@ -1,15 +1,16 @@
-.bar-yanzheng-icon{
-  clear: both;
-  display: block;
-  margin-left:90%;
-  width:30px;
-  height:30px;
-}
-.home-top-bar{
-  height: 44px;
+.bar-red{
   background-color:#C50119;
-  border-bottom: none;
+  background-image:none;
 }
+.bar-yanzheng-icon{
+  width:24px;
+  height:24px;
+  background:url('../img/yanzheng07@2x.png') no-repeat center center;
+  background-size:24px;
+  border-width:0;
+  margin-right:15px;
+}
+
 .home-logo{
   height: 200px;
   margin-top: 0;
