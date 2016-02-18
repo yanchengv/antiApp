@@ -1,6 +1,7 @@
 .bar-red{
   background-color:#C50119;
   background-image:none;
+  position:relative
 }
 .bar-yanzheng-icon{
   width:24px;
@@ -23,15 +24,9 @@
   margin:auto;
   height: 130px;
   width: 130px;
-  margin-top: 44px;
+
 }
-.icon-position-cus{
-  background-image:url('../img/position.png');
-  background-repeat:no-repeat;
-  height:50px;
-  width:50px;
-  margin-top:10px;
-}
+
 .home-logo-word p{
   text-align:center;
   color:#ffffff;
@@ -46,5 +41,7 @@
   font-size:14px;
   font-family:FZShuTi;
 }
+
+
 
 

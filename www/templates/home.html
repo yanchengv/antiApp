@@ -1,34 +1,32 @@
+
 <ion-view view-title="Home">
+  <ion-content>
+    <ion-header-bar  class="bar-red" >
+      <h1 class="title"></h1>
+      <div class="buttons">
+        <button class="bar-yanzheng-icon" />
+      </div>
+    </ion-header-bar>
 
-<ion-header-bar  class="bar-red" >
-  <h1 class="title"></h1>
-  <div class="buttons">
-    <button class="bar-yanzheng-icon" />
-  </div>
-</ion-header-bar>
-
-<div class="home-logo">
-  <img ng-src="../img/logo.png" class="logo-center"/>
-  <div class="home-logo-word">
-    <p class="big-word">一道打假</p>
-    <p class="small-word">让生活中少一些假冒伪劣，多一些诚信</p>
-  </div>
-</div>
-
-<div class="list">
-  <a class="item item-icon-left" href="#">
-    <i class="icon icon-position-cus"></i>
-    河北省石家庄市惠民批发市场 <span>2015-12-21 李**举报</span>
-  </a>
-  <a class="item item-icon-left" href="#">
-    <i class="icon icon-position-cus"></i>
-    北京市大民批发市场<span>2015-12-21 李**举报</span>
-  </a>
-  <a class="item item-icon-left" href="#">
-    <i class="icon icon-position-cus"></i>
-    天津市人民批发市场<span>2015-12-21 李**举报</span>
-  </a>
-</div>
+    <div class="home-logo">
+      <img ng-src="../img/logo.png" class="logo-center"/>
+      <div class="home-logo-word">
+        <p class="big-word">一道打假</p>
+        <p class="small-word">让生活中少一些假冒伪劣，多一些诚信</p>
+      </div>
+    </div>
 
 
+    <ion-list ng-controller="getHomeList1">
+      <ion-item ng-repeat="item in dataList1">
+        <img ng-src="../img/position.png">
+        {{item.title}}<span>{{item.time}} {{item.reporter}}举报</span>
+      </ion-item>
+    </ion-list>
+      <ion-list ng-controller="getHomeList2">
+          <ion-item ng-repeat="item in dataList2">
+            {{item.title}} {{item.time}}
+          </ion-item>
+      </ion-list>
+</ion-content>
 </ion-view>
