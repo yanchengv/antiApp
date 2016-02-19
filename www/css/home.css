@@ -1,7 +1,8 @@
 .bar-red{
   background-color:#C50119;
   background-image:none;
-  position:relative
+  position:relative;
+  border-style:none;
 }
 .bar-yanzheng-icon{
   width:24px;
@@ -41,7 +42,93 @@
   font-size:14px;
   font-family:FZShuTi;
 }
+.position-icon{
+  height:55px;
+  background:url('../img/position@2x.png') no-repeat 5px;
+  background-size:32px;
+  padding:10px 10px 10px 40px;
+}
+.list1-item-title{
+  float:left
+}
+ .list1-item-time{
+  float:right
+}
 
+.home-warn-icon{
+  height:43px;
+  background:url('../img/list2@2x.png') no-repeat 5px;
+  background-size:32px;
+  padding:10px 10px 10px 40px
+}
+.title{
+  width: 50%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  course:hand;
+}
+.home-list1{
+  margin-bottom:20px;
+}
+.list1-content{
+  color: #A2A2A2;
+  font-size:5px;
+}
+.home-list2{
+  margin-top:50px;
+}
 
+.home-list2-title{
+  float:left;
+}
+.home-list2-time{
+  float:right;
+}
+.list1-item-title , .home-list2-title{
+  color:#363636;
+  font-weight:normal;
+}
+.list1-item-time , .home-list2-time{
+  color: #A2A2A2;
+  font-size:5px;
+}
+.home-list3{
+  padding:10px 0;
+}
+.home-list3 li{
+  float:left;
+  width:33.333%;
+  text-align:center;
+  padding:10px 0px;
+  border-right:1px solid #ededed;
 
+}
+.home-list3 li:last-child{
+  border-right:0px;
+}
 
+ a{
+  text-decoration:none;
+}
+
+.circle{
+  font-size:14px;
+  width:60px;
+  height:60px;
+  background: #e64647;
+  color:#fff;
+  line-height:53px;
+  text-align:center;
+  display:inline-block;
+  border-radius:50%;
+  padding:5px;
+}
+.sub-item2{
+  color:#363636;
+  font-size:14px;
+}
+.sub-item3{
+  color: #A2A2A2;
+  font-size:10px;
+}
