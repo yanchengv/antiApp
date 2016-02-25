@@ -1,3 +1,9 @@
+.content{
+  background: #F4F4F4;
+}
+ul{
+  background:#FFFFFF
+}
 .bar-red{
   background-color:#C50119;
   background-image:none;
@@ -10,12 +16,12 @@
   background:url('../img/yanzheng07@2x.png') no-repeat center center;
   background-size:24px;
   border-width:0;
-  margin-right:15px;
+
 }
 
 .home-logo{
   height: 200px;
-  margin-top: 0;
+  margin-top: -1px;
   background-image:url('../img/background.jpg');
   background-repeat: repeat;
 }
@@ -49,52 +55,59 @@
   padding:10px 10px 10px 40px;
 }
 .list1-item-title{
+  padding-top:1px;
   float:left
 }
  .list1-item-time{
+   padding-top:1px;
   float:right
 }
 
 .home-warn-icon{
-  height:43px;
+  height:55px;
   background:url('../img/list2@2x.png') no-repeat 5px;
   background-size:32px;
   padding:10px 10px 10px 40px
 }
-.title{
+.li-title{
   width: 50%;
   overflow: hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
   course:hand;
 }
-.home-list1{
-  margin-bottom:20px;
-}
+
 .list1-content{
   color: #A2A2A2;
-  font-size:5px;
+  font-size:8px;
 }
 .home-list2{
-  margin-top:50px;
+  margin:10px 0;
 }
-
+.home-list2 li{
+  border-bottom:1px solid #ededed;
+}
 .home-list2-title{
+  padding-top:8px;
   float:left;
 }
 .home-list2-time{
+  padding-top:8px;
   float:right;
 }
+
 .list1-item-title , .home-list2-title{
+
   color:#363636;
   font-weight:normal;
 }
 .list1-item-time , .home-list2-time{
+
   color: #A2A2A2;
-  font-size:5px;
+  font-size:8px;
 }
 .home-list3{
-  padding:10px 0;
+  padding:5px 0;
 }
 .home-list3 li{
   float:left;

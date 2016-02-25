@@ -1,0 +1,13 @@
+.bar-yanzheng06-icon{
+  width:24px;
+  height:24px;
+  background:url('../img/yanzheng06@2x.png') no-repeat center center;
+  background-size:24px;
+  border-width:0;
+}
+.verification-logo{
+  height: 200px;
+  margin-top: -1px;
+  background-image:url('../img/background.jpg');
+  background-repeat: repeat;
+}

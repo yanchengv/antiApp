@@ -1,0 +1,14 @@
+.bar-back-icon{
+  width:24px;
+  heigh:24px;
+  background: url('../img/back@2x.png') no-repeat  center;
+  background-size:24px;
+  border-width:0;
+}
+.bar-message-icon{
+  width:24px;
+  height:24px;
+  background:url('../img/message@2x.png') no-repeat center;
+  background-size:24px;
+  border-width:0;
+}
