@@ -1,40 +1,31 @@
-.tab-item .icon{
-  margin-left: 30px;
-}
 .home-icon-off{
-  background-image:url('../img/menu-icon/home.png');
-  background-repeat: no-repeat;
-
+  background:url('../img/menu-icon/home.png') no-repeat  center;
 
 }
 .home-icon-on{
-  background-image:url('../img/menu-icon/home-s.png');
-  background-repeat: no-repeat;
+  background:url('../img/menu-icon/home-s.png') no-repeat center;
 
 }
 .code-icon-off{
-  background-image:url('../img/menu-icon/code.png');
-  background-repeat:no-repeat;
+  background:url('../img/menu-icon/code.png') no-repeat center;
 }
 
 .code-icon-on{
-  background-image:url('../img/menu-icon/code-s.png');
-  background-repeat:no-repeat;
+  background:url('../img/menu-icon/code-s.png') no-repeat center;
 }
 
 .jubao-icon-off{
-  background-image:url('../img/menu-icon/jubao.png');
-  background-repeat:no-repeat;
+  background:url('../img/menu-icon/jubao.png') no-repeat center;
 }
 .jubao-icon-on{
-  background-image:url('../img/menu-icon/jubao-s.png');
-  background-repeat:no-repeat;
+  background:url('../img/menu-icon/jubao-s.png') no-repeat center;
 }
 .my-info-off{
-  background-image:url('../img/menu-icon/my.png');
-  background-repeat:no-repeat;
+  background:url('../img/menu-icon/my.png') no-repeat center;
 }
 .my-info-on{
-  background-image:url('../img/menu-icon/my-select.png');
-  background-repeat:no-repeat;
+  background:url('../img/menu-icon/my-select.png') no-repeat center;
+}
+.tab-item-active{
+  color:red;
 }

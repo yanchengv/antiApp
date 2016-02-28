@@ -1,8 +1,5 @@
-.content{
+.home-background{
   background: #F4F4F4;
-}
-ul{
-  background:#FFFFFF
 }
 .bar-red{
   background-color:#C50119;
@@ -50,78 +47,62 @@ ul{
 }
 .position-icon{
   height:55px;
-  background:url('../img/position@2x.png') no-repeat 5px;
+  background:url('../img/position@2x.png') no-repeat 3px;
   background-size:32px;
-  padding:10px 10px 10px 40px;
 }
-.list1-item-title{
-  padding-top:1px;
-  float:left
+.list,.home-list3{
+  background: #FFFFFF;
 }
- .list1-item-time{
-   padding-top:1px;
-  float:right
+.list{
+  margin-bottom:10px;
 }
-
-.home-warn-icon{
-  height:55px;
-  background:url('../img/list2@2x.png') no-repeat 5px;
-  background-size:32px;
-  padding:10px 10px 10px 40px
+.list p{
+  margin-top:-5px;
+  margin-left:-15px;
 }
-.li-title{
-  width: 50%;
-  overflow: hidden;
-  text-overflow:ellipsis;
+.list-title{
+  float:left;
+  width:60%;
+  overflow:hidden;
+  text-overflow: ellipsis;
   white-space:nowrap;
   course:hand;
-}
-
-.list1-content{
-  color: #A2A2A2;
-  font-size:8px;
-}
-.home-list2{
-  margin:10px 0;
-}
-.home-list2 li{
-  border-bottom:1px solid #ededed;
-}
-.home-list2-title{
-  padding-top:8px;
-  float:left;
-}
-.home-list2-time{
-  padding-top:8px;
-  float:right;
-}
-
-.list1-item-title , .home-list2-title{
-
   color:#363636;
   font-weight:normal;
 }
-.list1-item-time , .home-list2-time{
-
+.list-time{
+  padding-top:1px;
+  float:right
+}
+#list-content , .list-time{
   color: #A2A2A2;
   font-size:8px;
 }
-.home-list3{
-  padding:5px 0;
+.home-warn-icon{
+  height:55px;
+  background:url('../img/list2@2x.png') no-repeat 3px;
+  background-size:32px;
 }
+.list2-p{
+  padding-top:5px;
+}
+
 .home-list3 li{
   float:left;
   width:33.333%;
   text-align:center;
-  padding:10px 0px;
   border-right:1px solid #ededed;
 
 }
+.home-list3 a{
+  border-top:0px;
+}
 .home-list3 li:last-child{
   border-right:0px;
+
 }
 
- a{
+a{
   text-decoration:none;
 }
 
@@ -137,11 +118,11 @@ ul{
   border-radius:50%;
   padding:5px;
 }
-.sub-item2{
+.circle-item2{
   color:#363636;
   font-size:14px;
 }
-.sub-item3{
+.circle-item3{
   color: #A2A2A2;
   font-size:10px;
 }

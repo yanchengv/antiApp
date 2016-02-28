@@ -1,6 +1,5 @@
-
 <ion-view view-title="Home">
-  <ion-content class="content">
+  <ion-content class="home-background">
     <ion-header-bar  class="bar-red" >
       <h1 class="title"></h1>
       <div class="buttons">
@@ -17,37 +16,28 @@
     </div>
 
 
-    <ul ng-controller="getHomeList1" class="home-list1">
-      <li ng-repeat="item in dataList1" class="item position-icon">
-        <a  href="#">
-          <p>
-            <span class="list1-item-title li-title">{{item.title}}</span>
-            <span class="list1-item-time">{{item.time}} {{item.reporter}}举报</span>
-          </p>
-          <p>
-            <span class="li-title list1-content">{{item.content}}</span>
-          </p>
-        </a>
-      </li>
-    </ul>
-      <ul ng-controller="getHomeList2" class="home-list2" >
-          <li ng-repeat="item in dataList2" class=" item home-warn-icon">
-            <a href="#">
-              <p>
-                <span class="home-list2-title li-title">{{item.title}}</span>
-                <span class="home-list2-time">{{item.time}}</span>
-              </p>
-            </a>
+    <div class="list" ng-controller="getHomeList1">
+      <a class="item item-icon-left position-icon" ng-repeat="item in dataList1" href="#">
+        <p><span class="list-title">{{item.title}}</span> <span class="list-time ">{{item.time }} {{ item.reporter}}</span></p>
+        <p id="list-content">{{item.content}}</p>
+      </a>
+    </div>
 
-          </li>
-      </ul>
+    <div class="list" ng-controller="getHomeList2" >
+      <a class="item item-icon-left home-warn-icon" ng-repeat="item in dataList2" href="#">
+        <p class="list2-p">
+          <span class="list-title">{{item.title}}</span>
+          <span class="list-time">{{item.time}}</span>
+        </p>
+      </a>
+    </div>
 
     <ul ng-controller="getHomeList3" class="home-list3">
       <li ng-repeat="item in dataList3" class="li-title">
-        <a href="#">
+        <a href="#" class="item">
               <span class="circle">￥{{item.money}}</span><br/>
-             <span class="sub-item2">{{item.reporter}}举报</span><br/>
-             <span class="sub-item3">假冒{{item.product}}获得{{item.money}}元奖励</span><br/>
+             <span class="circle-item2">{{item.reporter}}举报</span><br/>
+             <span class="circle-item3">假冒{{item.product}}获得{{item.money}}元奖励</span><br/>
         </a>
       </li>
       <div style="clear: both"></div>
