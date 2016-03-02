@@ -25,12 +25,15 @@
   background-size:25px;
 }
 .i2-icon{
-  height:50%;
-  width:100%;
+  height:50px;
   background:url('../img/yanzheng02@2x.png') no-repeat 0px center;
   background-size:25px;
 }
 
+.input-select{
+  width: 100%;
+  direction:ltr !important;
+}
 .scan-button{
   float:left;
   width: 45%;
@@ -40,7 +43,7 @@
 }
 
 .scan-button:active{
-  background:black;
+  background:#F52929;
 }
 .input-button{
   float:right;
@@ -49,4 +52,7 @@
   background: #FF9600;
   margin:5px 10px 0 0;
 
+}
+.input-button:active{
+  background:#FF7900
 }
