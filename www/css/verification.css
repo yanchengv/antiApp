@@ -24,15 +24,22 @@
   background:url('../img/yanzheng01@2x.png') no-repeat 0px center;
   background-size:25px;
 }
-.i2-icon{
-  height:50px;
+.item-select{
+  height:47px
+}
+.item-select .i2-icon{
+  /*height:50px;*/
   background:url('../img/yanzheng02@2x.png') no-repeat 0px center;
   background-size:25px;
+
 }
 
 .input-select{
   width: 100%;
+  max-width:100% !important;
+  left:0px !important;
   direction:ltr !important;
+  padding-left:30px !important;
 }
 .scan-button{
   float:left;

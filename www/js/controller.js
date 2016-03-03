@@ -22,4 +22,13 @@ angular.module('antiApp.controllers',[])
       {reporter:'李**',money:'200',product:'维达纸'}
     ]
   })
+  .controller('getVerSelectData',function($scope){
+    $scope.datas = [
+      {id:1,name:'海飞丝'},
+      {id:2,name:'飘柔'},
+      {id:3,name:'蓝月亮'},
+      {id:2,name:'老干妈'}
+
+    ]
+  })
 
