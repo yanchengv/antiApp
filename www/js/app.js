@@ -59,8 +59,15 @@ angular.module('antiApp', ['ionic','antiApp.controllers'])
         },
 
       }
+    })
 
-
+    .state('tab.goVerification',{
+      url:'/goVerification',
+      views:{
+        'tab-verification':{
+          templateUrl:'templates/goVerification.html'
+        }
+      }
     })
     .state('tab.report',{
       url:'/report',
@@ -81,14 +88,7 @@ angular.module('antiApp', ['ionic','antiApp.controllers'])
       }
 
     })
-    .state('tab.goVerification',{
-      url:'/goVerification',
-      views:{
-        'tab-goVerification':{
-          templateUrl:'templates/goVerification.html'
-        }
-      }
-    })
+
 
   })
 
