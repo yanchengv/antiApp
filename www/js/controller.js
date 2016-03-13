@@ -31,4 +31,17 @@ angular.module('antiApp.controllers',[])
 
     ]
   })
+  .controller('mySubmit',function($scope,$state){
+    //输入验证码点击提交
+    $scope.codeSubmit = function(){
+      var product =  $scope.product;
+      $state.go('tab.goVerification',product)
+    }
+  })
+  //公用方法
+  .controller('myCommon',function($scope,$state){
+    $scope.goBack = function(){
+      $state.go('tab.verification')
+    }
 
+  })

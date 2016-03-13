@@ -63,9 +63,17 @@ angular.module('antiApp', ['ionic','antiApp.controllers'])
 
     .state('tab.goVerification',{
       url:'/goVerification',
+      params:{brand:null,name:null,code:null},
       views:{
         'tab-verification':{
-          templateUrl:'templates/goVerification.html'
+          templateUrl:'templates/goVerification.html',
+          controller:function($scope,$state,$stateParams){
+            console.log($stateParams)
+            $scope.product = $stateParams
+          }
+
+
+
         }
       }
     })

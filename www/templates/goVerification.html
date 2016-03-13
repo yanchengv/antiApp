@@ -1,15 +1,32 @@
 <!--验证完成界面-->
 <link href="css/goVerification.css" rel="stylesheet">
-<ion-view title="verificationSure">
+<ion-view title="verificationSure" class="verificationSure">
     <ion-content>
       <ion-header-bar  class="bar-red" >
-        <div class="buttons">
-          <button class="bar-back-icon" />
+        <div class="buttons" ng-controller="myCommon">
+          <button class="bar-back-icon" ng-click="goBack()"/>
         </div>
         <h1 class="title header-title">一道打假</h1>
         <div class="buttons">
           <button class="bar-message-icon" />
         </div>
       </ion-header-bar>
+
+      <div class="yanzhengs">
+        <div class="circle-font">
+          <span class="circle"></span>
+          <p>验证完成!</p>
+        </div>
+      </div>
+
+     <ul class="list"  >
+       <li class="item">品牌: <span class="yanprolist">{{product.brand}}</span></li>
+       <li class="item">产品类型:<span class="yanprolist">{{product.name}}</span></li>
+       <li class="item">验证码:<span class="yanprolist">{{product.code}}</span></li>
+     </ul>
+      <div class="goVerifiPart3">
+        <span>第N次验证，向上位物主发送验证请求?</span>
+        <p><button class="button button-calm ">确定</button></p>
+      </div>
     </ion-content>
 </ion-view>

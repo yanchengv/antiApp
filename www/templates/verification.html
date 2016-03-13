@@ -1,6 +1,6 @@
 <!--验证界面-->
 <link href="css/verification.css" rel="stylesheet">
-<ion-view view-title="verification">
+<ion-view view-title="verification" >
 
   <ion-content>
 
@@ -19,26 +19,29 @@
 
     </div>
 
-    <div class="list list-inset">
+    <div class="list list-inset" ng-controller="mySubmit">
+      <form ng-submit="codeSubmit()">
       <label class="item item-input i1-icon " >
-        <input type="text" class="list-input" placeholder="请输入品牌">
+        <input type="text" class="list-input" ng-model="product.brand" placeholder="请输入品牌">
       </label>
 
       <label class="item item-input item-select " >
-        <select class="input-select i2-icon" ng-controller="getVerSelectData">
+        <select class="input-select i2-icon" ng-model="product.name" ng-controller="getVerSelectData">
           <option ng-repeat="data in datas" id="{{data.id}}}">{{data.name}}</option>
         </select>
       </label>
 
-      <label class="item item-input i1-icon " >
-        <input type="text" class="list-input" placeholder="请输入验证码">
-      </label>
+        <label class="item item-input i1-icon " >
+          <input type="text" class="list-input" ng-model="product.code" placeholder="请输入验证码">
+        </label>
+        <p>
+          <a class="button  scan-button" >扫描验证码</a>
+          <input class="button input-button " type="submit" name="submit" value="确定">
+        </p>
+      </form>
     </div>
 
-    <p>
-      <a class="button  scan-button" >扫描验证码</a>
-      <a class="button input-button " href="#/tab/goVerification">确定</a>
-    </p>
+
   </ion-content>
 
 </ion-view>

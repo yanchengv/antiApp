@@ -46,7 +46,7 @@
   width: 45%;
   color:#FFFFFF;
   background:#ED4A4B;
-  margin:5px 0 0 10px;
+  margin:15px 0 0 25px;
 }
 
 .scan-button:active{
@@ -57,7 +57,7 @@
   width:45%;
   color:#FFFFFF;
   background: #FF9600;
-  margin:5px 10px 0 0;
+  margin:15px 10px 0 0;
 
 }
 .input-button:active{

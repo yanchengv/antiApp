@@ -1,0 +1,19 @@
+.verificationSure{
+  background: #F4F4F4;
+}
+.yanzhengs{
+  text-align:center;
+  background:#FFFFFF;
+}
+
+.yanprolist{
+  float:right;
+}
+
+.goVerifiPart3 button {
+  background:#FFFFFF;
+  border: none;
+  padding-top:20px;
+  float:right;
+  mrgin-right:50px !important;
+}
