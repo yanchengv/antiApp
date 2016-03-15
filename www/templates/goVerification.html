@@ -20,13 +20,16 @@
       </div>
 
      <ul class="list"  >
-       <li class="item">品牌: <span class="yanprolist">{{product.brand}}</span></li>
-       <li class="item">产品类型:<span class="yanprolist">{{product.name}}</span></li>
-       <li class="item">验证码:<span class="yanprolist">{{product.code}}</span></li>
+       <li class="item"><span class="list-first-word">品牌:</span> <span class="yanprolist">{{product.brand}}</span></li>
+       <li class="item"><span class="list-first-word">产品类型:</span><span class="yanprolist">{{product.name}}</span></li>
+       <li class="item"><span class="list-first-word">验证码:</span><span class="yanprolist">{{product.code}}</span></li>
      </ul>
+
       <div class="goVerifiPart3">
-        <span>第N次验证，向上位物主发送验证请求?</span>
+        <span class="requestWord">第<span style="color:#DB6E77">N</span>次验证，向上位物主发送验证请求?</span>
         <p><button class="button button-calm ">确定</button></p>
+        <div style="clear:both;"></div>
       </div>
+
     </ion-content>
 </ion-view>
