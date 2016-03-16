@@ -40,3 +40,30 @@
   width: 39%;
   height:47px;
 }
+.button-red{
+  background: #BD0112;
+}
+.verifySuccessPart3{
+  text-align:center;
+}
+.button-share{
+  background:#54C957;
+  color:#BAEABC;
+  width:90%;
+
+}
+.verifyFalsePart3 button{
+  border: none;
+  float:right;
+  margin:0px 25px 0px 0px;
+  width: 39%;
+  height:47px;
+}
+.button-jubao{
+  background:#ED4A4B;
+  color:#BAEABC;
+}
+.button-share-false{
+  background:#54C957;
+  color:#BAEABC;
+}

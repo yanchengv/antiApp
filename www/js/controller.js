@@ -31,11 +31,22 @@ angular.module('antiApp.controllers',[])
 
     ]
   })
-  .controller('mySubmit',function($scope,$state){
+  .controller('verify',function($scope,$state){
     //输入验证码点击提交
     $scope.codeSubmit = function(){
       var product =  $scope.product;
       $state.go('tab.goVerification',product)
+    }
+    $scope.sendRequest = function(){
+      var product =  $scope.product;
+      if(product.code =="123"){
+        //验证成功
+        $state.go('tab.verifySuccess',product)
+      }else{
+        //验证失败
+        $state.go('tab.verifyFalse',product)
+      }
+
     }
   })
   //公用方法

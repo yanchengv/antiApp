@@ -68,12 +68,35 @@ angular.module('antiApp', ['ionic','antiApp.controllers'])
         'tab-verification':{
           templateUrl:'templates/goVerification.html',
           controller:function($scope,$state,$stateParams){
-            console.log($stateParams)
             $scope.product = $stateParams
           }
 
-
-
+        }
+      }
+    })
+    //结果为真界面
+    .state("tab.verifySuccess",{
+      url:'/verifySuccess',
+      params:{brand:null,name:null,code:null},
+      views:{
+        'tab-verification':{
+          templateUrl:'templates/verifySuccess.html',
+          controller:function($scope,$state,$stateParams){
+            $scope.product = $stateParams
+          }
+        }
+      }
+    })
+    //结果为假
+    .state('tab.verifyFalse',{
+      url:'/verifyFalse',
+      params:{brand:null,name:null,code:null},
+      views:{
+        'tab-verification':{
+          templateUrl:'templates/verifyFalse.html',
+          controller:function($scope,$state,$stateParams){
+            $scope.product = $stateParams
+          }
         }
       }
     })
